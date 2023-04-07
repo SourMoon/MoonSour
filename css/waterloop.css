@@ -45,6 +45,7 @@ body {
   nav ul a:hover {
     background: rgb(235, 235, 235);
   }
+  
   nav .close {
     float: right;
     margin: 2em;
@@ -61,22 +62,30 @@ body {
     cursor: pointer;
   }
   
-  .maintext {
-    display: flex;
-    gap: 25px;
-    margin-top: 25px;
-  }
-
-  .left-col {
-    width: 50%;
-    height: 100vh;
-    border-radius: 20px;
-  }
   .open-nav {
     transform: translateX(0%);
   }
 
-  
+  .grid-wrapper {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25em);
+    justify-content: center;
+    gap: 4em
+  }
+
+  .waterloopimg {
+    width: 25em;
+    object-fit: cover;
+    height: 25em;
+    border-radius: 20px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+
   /*Tablet*/
   @media only screen and (min-width: 680px) {
     body {
